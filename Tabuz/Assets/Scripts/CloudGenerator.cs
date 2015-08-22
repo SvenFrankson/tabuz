@@ -23,11 +23,36 @@
 using UnityEngine;
 using System.Collections;
 
-public class LevelCube : MonoBehaviour {
+public class CloudGenerator : MonoBehaviour {
 
-	public string levelName;
+	private float t = 0f;
+	public float T;
+	public float a;
+	public float A;
+	public float v;
+	public float V;
+	public float lifeTime;
+
+	public GameObject[] clouds;
 	
-	void OnMouseDown () {
-		Application.LoadLevel (this.levelName);
+	void Update () {
+		this.t += Time.deltaTime;
+
+		if (t > T) {
+			this.PopCloud ();
+			t = 0f;
+		}
+	}
+
+	private void PopCloud () {
+		int cIndex = Random.Range (0, clouds.Length - 1);
+
+		GameObject go = GameObject.Instantiate (this.clouds[cIndex]);
+		Cloud cloud = go.GetComponent<Cloud> ();
+
+		cloud.v = Random.Range (v, V);
+		cloud.lifeTime = this.lifeTime;
+		cloud.transform.position = this.transform.position;
+		cloud.transform.position += Vector3.up * Random.Range (a, A);
 	}
 }

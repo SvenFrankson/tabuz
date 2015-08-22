@@ -23,11 +23,18 @@
 using UnityEngine;
 using System.Collections;
 
-public class LevelCube : MonoBehaviour {
+public class Cloud : MonoBehaviour {
 
-	public string levelName;
-	
-	void OnMouseDown () {
-		Application.LoadLevel (this.levelName);
+	public float v;
+	private float t = 0f;
+	public float lifeTime;
+
+	void Update () {
+		this.transform.position += Vector3.left * v * Time.deltaTime;
+		this.t += Time.deltaTime;
+
+		if (this.t > this.lifeTime) {
+			Destroy (this.gameObject);
+		}
 	}
 }

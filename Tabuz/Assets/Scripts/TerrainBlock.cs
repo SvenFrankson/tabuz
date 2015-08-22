@@ -18,16 +18,19 @@
 //		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 //		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-//		SOFTWARE.
+//		SOFTWAR
 
 using UnityEngine;
 using System.Collections;
 
-public class LevelCube : MonoBehaviour {
+public class TerrainBlock : MonoBehaviour {
 
-	public string levelName;
-	
-	void OnMouseDown () {
-		Application.LoadLevel (this.levelName);
-	}
+	public enum BlockType {
+		Ground,
+		Nature,
+		Water,
+		Building
+	};
+
+	public BlockType blockType;
 }

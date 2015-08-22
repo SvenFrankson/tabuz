@@ -23,11 +23,17 @@
 using UnityEngine;
 using System.Collections;
 
-public class LevelCube : MonoBehaviour {
+public class CameraTracker : MonoBehaviour {
 
-	public string levelName;
-	
-	void OnMouseDown () {
-		Application.LoadLevel (this.levelName);
+	public GameObject target;
+	public float delta;
+	public float minHeight;
+
+	void Update () {
+		float height = this.target.transform.position.y + delta;
+		if (height < minHeight) {
+			height = minHeight;
+		}
+		this.transform.position = new Vector3 (0f, height, -25f);
 	}
 }

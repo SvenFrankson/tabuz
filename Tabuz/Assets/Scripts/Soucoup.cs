@@ -25,6 +25,8 @@ using System.Collections;
 
 public class Soucoup : MonoBehaviour {
 
+	public TextMesh infoText;
+
 	public float engineThrust = 10f;
 	public GameObject leftEngine;
 	public MeshRenderer leftEngineRenderer;
@@ -32,12 +34,20 @@ public class Soucoup : MonoBehaviour {
 	public GameObject rightEngine;
 	public MeshRenderer rightEngineRenderer;
 	private Vector3 rightEngineLocalPos;
-	private Rigidbody rigidbody;
+	private Rigidbody cRigidbody;
+
+	public float squareVelocityThreshold = 4f;
+
+	private bool gameOver = false;
+
+	void OnGUI () {
+		GUI.TextArea (new Rect (10f, 10f, 200f, 30f), "Speed = " + this.cRigidbody.velocity.magnitude);
+	}
 
 	// Use this for initialization
 	void Start () {
 		Physics.gravity = 5f * Vector3.down;
-		this.rigidbody = this.GetComponent<Rigidbody> ();
+		this.cRigidbody = this.GetComponent<Rigidbody> ();
 		this.leftEngineLocalPos = this.leftEngine.transform.localPosition - this.transform.right;
 		this.leftEngineRenderer = this.leftEngine.GetComponent<MeshRenderer> ();
 		this.rightEngineLocalPos = this.rightEngine.transform.localPosition + this.transform.right;
@@ -46,8 +56,11 @@ public class Soucoup : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (this.gameOver) {
+			return;
+		}
 		if (Input.GetKey(KeyCode.Q)) {
-			this.rigidbody.AddForceAtPosition (this.engineThrust * this.transform.up, this.transform.position + this.leftEngineLocalPos);
+			this.cRigidbody.AddForceAtPosition (this.engineThrust * this.transform.up, this.transform.position + this.leftEngineLocalPos);
 			this.leftEngineRenderer.material.color = Color.red;
 		}
 		else {
@@ -55,11 +68,138 @@ public class Soucoup : MonoBehaviour {
 		}
 
 		if (Input.GetKey(KeyCode.D)) {
-			this.rigidbody.AddForceAtPosition (this.engineThrust * this.transform.up, this.transform.position +  this.rightEngineLocalPos);
+			this.cRigidbody.AddForceAtPosition (this.engineThrust * this.transform.up, this.transform.position +  this.rightEngineLocalPos);
 			this.rightEngineRenderer.material.color = Color.red;
 		}
 		else {
 			this.rightEngineRenderer.material.color = Color.blue;
 		}
+	}
+
+	void OnCollisionEnter (Collision col) {
+		if (this.gameOver) {
+			return;
+		}
+
+		TerrainBlock block = col.gameObject.GetComponent<TerrainBlock> ();
+
+		if (block == null) {
+			return;
+		}
+
+		TerrainBlock.BlockType type = block.blockType;
+
+		if (type == TerrainBlock.BlockType.Nature) {
+			this.gameOver = true;
+			StartCoroutine("WriteInfoTree");
+		}
+		else if (type == TerrainBlock.BlockType.Building) {
+			this.gameOver = true;
+			StartCoroutine("WriteInfoBuilding");
+		}
+		else if (type == TerrainBlock.BlockType.Ground) {
+			if (this.cRigidbody.velocity.sqrMagnitude > this.squareVelocityThreshold) {
+				this.gameOver = true;
+				StartCoroutine("WriteInfoCrash");
+			}
+			else {
+				this.gameOver = true;
+				StartCoroutine("WriteInfoSuccess");
+			}
+		}
+	}
+
+	void OnTriggerEnter (Collider col) {
+		if (this.gameOver) {
+			return;
+		}
+		
+		TerrainBlock block = col.gameObject.GetComponent<TerrainBlock> ();
+		
+		if (block == null) {
+			return;
+		}
+		
+		TerrainBlock.BlockType type = block.blockType;
+
+		if (type == TerrainBlock.BlockType.Water) {
+			this.gameOver = true;
+			StartCoroutine("WriteInfoWater");
+		}
+	}
+
+	IEnumerator WriteInfoTree () {
+		this.infoText.text = "";
+		string message = "FAILURE\nYou were supposed to land,\nnot to nest !";
+		int i = 0;
+
+		while (i < message.Length) {
+			this.infoText.text += message[i];
+			i++;
+			yield return null;
+		}
+		
+		yield return new WaitForSeconds(3f);
+		Application.LoadLevel("main");
+	}
+	
+	IEnumerator WriteInfoBuilding () {
+		this.infoText.text = "";
+		string message = "FAILURE\nOups !";
+		int i = 0;
+		
+		while (i < message.Length) {
+			this.infoText.text += message[i];
+			i++;
+			yield return null;
+		}
+		
+		yield return new WaitForSeconds(3f);
+		Application.LoadLevel("main");
+	}
+	
+	IEnumerator WriteInfoWater () {
+		this.infoText.text = "";
+		string message = "FAILURE\nPlouf !";
+		int i = 0;
+		
+		while (i < message.Length) {
+			this.infoText.text += message[i];
+			i++;
+			yield return null;
+		}
+		
+		yield return new WaitForSeconds(3f);
+		Application.LoadLevel("main");
+	}
+	
+	IEnumerator WriteInfoCrash () {
+		this.infoText.text = "";
+		string message = "FAILURE\nToo fast !\nSlow down !";
+		int i = 0;
+		
+		while (i < message.Length) {
+			this.infoText.text += message[i];
+			i++;
+			yield return null;
+		}
+		
+		yield return new WaitForSeconds(3f);
+		Application.LoadLevel("main");
+	}
+	
+	IEnumerator WriteInfoSuccess () {
+		this.infoText.text = "";
+		string message = "WELL DONE !";
+		int i = 0;
+		
+		while (i < message.Length) {
+			this.infoText.text += message[i];
+			i++;
+			yield return null;
+		}
+		
+		yield return new WaitForSeconds(3f);
+		Application.LoadLevel("main");
 	}
 }
