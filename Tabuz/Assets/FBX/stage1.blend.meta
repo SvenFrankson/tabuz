@@ -16,6 +16,9 @@ ModelImporter:
     100016: Ground2
     100018: Ground3
     100020: Water
+    100022: Box
+    100024: Cable
+    100026: Crane
     400000: Cylinder
     400002: EngineLeft
     400004: EngineRight
@@ -27,6 +30,9 @@ ModelImporter:
     400016: Ground2
     400018: Ground3
     400020: Water
+    400022: Box
+    400024: Cable
+    400026: Crane
     2300000: Cylinder
     2300002: EngineLeft
     2300004: EngineRight
@@ -37,6 +43,9 @@ ModelImporter:
     2300014: Ground2
     2300016: Ground3
     2300018: Water
+    2300020: Box
+    2300022: Cable
+    2300024: Crane
     3300000: Cylinder
     3300002: EngineLeft
     3300004: EngineRight
@@ -47,6 +56,9 @@ ModelImporter:
     3300014: Ground2
     3300016: Ground3
     3300018: Water
+    3300020: Box
+    3300022: Cable
+    3300024: Crane
     4300000: TreeC
     4300002: TreeB
     4300004: TreeA
@@ -57,6 +69,9 @@ ModelImporter:
     4300014: Ground2
     4300016: Water
     4300018: Ground3
+    4300020: Cable
+    4300022: Box
+    4300024: Crane
     7400000: Default Take
     9500000: //RootNode
   materials:
