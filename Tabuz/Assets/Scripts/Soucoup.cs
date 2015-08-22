@@ -43,10 +43,6 @@ public class Soucoup : MonoBehaviour {
 		this.rightEngineLocalPos = this.rightEngine.transform.localPosition + this.transform.right;
 		this.rightEngineRenderer = this.rightEngine.GetComponent<MeshRenderer> ();
 	}
-
-	void OnGUI () {
-		GUI.TextArea (new Rect (10f, 10f, 100f, 30f), this.transform.up + "");
-	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {

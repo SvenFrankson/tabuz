@@ -13,6 +13,9 @@ ModelImporter:
     100010: TreeA
     100012: TreeB
     100014: TreeC
+    100016: Ground2
+    100018: Ground3
+    100020: Water
     400000: Cylinder
     400002: EngineLeft
     400004: EngineRight
@@ -21,6 +24,9 @@ ModelImporter:
     400010: TreeA
     400012: TreeB
     400014: TreeC
+    400016: Ground2
+    400018: Ground3
+    400020: Water
     2300000: Cylinder
     2300002: EngineLeft
     2300004: EngineRight
@@ -28,6 +34,9 @@ ModelImporter:
     2300008: TreeA
     2300010: TreeB
     2300012: TreeC
+    2300014: Ground2
+    2300016: Ground3
+    2300018: Water
     3300000: Cylinder
     3300002: EngineLeft
     3300004: EngineRight
@@ -35,6 +44,9 @@ ModelImporter:
     3300008: TreeA
     3300010: TreeB
     3300012: TreeC
+    3300014: Ground2
+    3300016: Ground3
+    3300018: Water
     4300000: TreeC
     4300002: TreeB
     4300004: TreeA
@@ -42,6 +54,9 @@ ModelImporter:
     4300008: EngineRight
     4300010: EngineLeft
     4300012: Cylinder
+    4300014: Ground2
+    4300016: Water
+    4300018: Ground3
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -63,7 +78,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

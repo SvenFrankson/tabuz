@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Materials\Shaders\earth.shader">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Soucoup.cs">
     <Files>
-      <File FileName="Assets\Materials\Shaders\island.shader" Line="25" Column="26" />
-      <File FileName="Assets\Materials\Shaders\earth.shader" Line="28" Column="35" />
+      <File FileName="Assets\Scripts\Soucoup.cs" Line="48" Column="73" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
