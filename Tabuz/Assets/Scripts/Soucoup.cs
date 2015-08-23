@@ -40,6 +40,8 @@ public class Soucoup : MonoBehaviour {
 
 	private bool gameOver = false;
 
+	public Vector3 wind;
+
 	void OnGUI () {
 		GUI.TextArea (new Rect (10f, 10f, 200f, 30f), "Speed = " + this.cRigidbody.velocity.magnitude);
 	}
@@ -74,6 +76,8 @@ public class Soucoup : MonoBehaviour {
 		else {
 			this.rightEngineRenderer.material.color = Color.blue;
 		}
+
+		this.cRigidbody.AddForce (this.wind);
 	}
 
 	void OnCollisionEnter (Collision col) {
