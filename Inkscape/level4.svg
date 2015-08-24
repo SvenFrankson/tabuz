@@ -15,7 +15,7 @@
    id="svg4151"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="level1.svg"
+   sodipodi:docname="level4.svg"
    inkscape:export-filename="C:\Users\Sven\Documents\SvenFrankson\tabuz\Tabuz\Assets\Icon\level1.png"
    inkscape:export-xdpi="22.5"
    inkscape:export-ydpi="22.5">
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="33.00814"
-     inkscape:cy="509.71372"
+     inkscape:cx="325.86528"
+     inkscape:cy="522.57086"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -67,47 +67,29 @@
     <ellipse
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4701"
-       cx="180"
-       cy="732.36212"
+       cx="397.14285"
+       cy="620.93353"
        rx="80"
        ry="72.85714" />
     <ellipse
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4703"
-       cx="414.28571"
-       cy="811.64783"
+       cx="581.42859"
+       cy="774.505"
        rx="75.714287"
-       ry="53.57143" />
+       ry="97.857147" />
     <ellipse
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4705"
-       cx="822.85712"
-       cy="745.93353"
+       cx="695.71429"
+       cy="517.36212"
        rx="95.714287"
        ry="90.714287" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:18.75431061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 177.14285,789.50497 c -22.49333,48.57143 -41.07532,97.14286 0,145.71429"
-       id="path4707"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:13.6457653;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 414.28571,862.36211 c 25.45378,32.65623 15.98045,55.78688 0,77.14287"
-       id="path4707-4"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.29470062;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 821.42857,828.07639 c 12.76983,36.66667 34.53276,73.33334 0,110.00001"
-       id="path4707-4-1"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot4739"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.5px;line-height:125%;font-family:Furore;-inkscape-font-specification:Furore;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(65.449219,72.635169)"><flowRegion
+       transform="translate(65.449219,16.920883)"><flowRegion
          id="flowRegion4741"><rect
            id="rect4743"
            width="902.85718"
@@ -116,5 +98,5 @@
            y="122.57143"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.5px;font-family:Furore;-inkscape-font-specification:Furore" /></flowRegion><flowPara
          id="flowPara4745"
-         style="font-size:187.5px">LEVEL 1</flowPara></flowRoot>  </g>
+         style="font-size:187.5px">LEVEL 4</flowPara></flowRoot>  </g>
 </svg>

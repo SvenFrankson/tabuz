@@ -42,10 +42,6 @@ public class Soucoup : MonoBehaviour {
 
 	public Vector3 wind;
 
-	void OnGUI () {
-		GUI.TextArea (new Rect (10f, 10f, 200f, 30f), "Speed = " + this.cRigidbody.velocity.magnitude);
-	}
-
 	// Use this for initialization
 	void Start () {
 		Physics.gravity = 5f * Vector3.down;
@@ -134,7 +130,7 @@ public class Soucoup : MonoBehaviour {
 
 	IEnumerator WriteInfoTree () {
 		this.infoText.text = "";
-		string message = "FAILURE\nYou were supposed to land,\nnot to nest !";
+		string message = "FAILURE\nIt's a tree !";
 		int i = 0;
 
 		while (i < message.Length) {
@@ -149,7 +145,7 @@ public class Soucoup : MonoBehaviour {
 	
 	IEnumerator WriteInfoBuilding () {
 		this.infoText.text = "";
-		string message = "FAILURE\nOups !";
+		string message = "FAILURE\nThat's no ground !";
 		int i = 0;
 		
 		while (i < message.Length) {

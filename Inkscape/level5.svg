@@ -15,7 +15,7 @@
    id="svg4151"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="level1.svg"
+   sodipodi:docname="level5.svg"
    inkscape:export-filename="C:\Users\Sven\Documents\SvenFrankson\tabuz\Tabuz\Assets\Icon\level1.png"
    inkscape:export-xdpi="22.5"
    inkscape:export-ydpi="22.5">
@@ -67,27 +67,27 @@
     <ellipse
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4701"
-       cx="180"
-       cy="732.36212"
+       cx="107.14286"
+       cy="779.505"
        rx="80"
        ry="72.85714" />
     <ellipse
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4703"
-       cx="414.28571"
-       cy="811.64783"
+       cx="378.57141"
+       cy="831.64783"
        rx="75.714287"
        ry="53.57143" />
     <ellipse
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4705"
-       cx="822.85712"
-       cy="745.93353"
+       cx="577.14288"
+       cy="754.50494"
        rx="95.714287"
        ry="90.714287" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:18.75431061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 177.14285,789.50497 c -22.49333,48.57143 -41.07532,97.14286 0,145.71429"
+       d="m 177.14285,789.50497 c 8.87022,49.33639 73.39907,99.93492 0,145.71429"
        id="path4707"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -99,7 +99,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.29470062;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 821.42857,828.07639 c 12.76983,36.66667 34.53276,73.33334 0,110.00001"
+       d="m 637.14285,803.79068 c 12.76983,36.66667 113.10419,94.76191 78.57143,131.42858"
        id="path4707-4-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -116,5 +116,5 @@
            y="122.57143"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.5px;font-family:Furore;-inkscape-font-specification:Furore" /></flowRegion><flowPara
          id="flowPara4745"
-         style="font-size:187.5px">LEVEL 1</flowPara></flowRoot>  </g>
+         style="font-size:187.5px">LEVEL 5</flowPara></flowRoot>  </g>
 </svg>

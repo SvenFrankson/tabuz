@@ -20,6 +20,9 @@ ModelImporter:
     100024: Cable
     100026: Crane
     100028: Ground4
+    100030: Pile
+    100032: Rotor
+    100034: Ground4_002
     400000: Cylinder
     400002: EngineLeft
     400004: EngineRight
@@ -35,6 +38,9 @@ ModelImporter:
     400024: Cable
     400026: Crane
     400028: Ground4
+    400030: Pile
+    400032: Rotor
+    400034: Ground4_002
     2300000: Cylinder
     2300002: EngineLeft
     2300004: EngineRight
@@ -49,6 +55,9 @@ ModelImporter:
     2300022: Cable
     2300024: Crane
     2300026: Ground4
+    2300028: Pile
+    2300030: Rotor
+    2300032: Ground4_002
     3300000: Cylinder
     3300002: EngineLeft
     3300004: EngineRight
@@ -63,6 +72,9 @@ ModelImporter:
     3300022: Cable
     3300024: Crane
     3300026: Ground4
+    3300028: Pile
+    3300030: Rotor
+    3300032: Ground4_002
     4300000: TreeC
     4300002: TreeB
     4300004: TreeA
@@ -77,6 +89,9 @@ ModelImporter:
     4300022: Box
     4300024: Crane
     4300026: Ground4
+    4300028: Pile
+    4300030: Rotor
+    4300032: Ground4_002
     7400000: Default Take
     9500000: //RootNode
   materials:
